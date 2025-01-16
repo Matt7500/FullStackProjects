@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #3a3a3a;
+}
+
+#left {
+    position: relative;
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 100vh;
+}
+
+#logo-holder {
+    position: absolute;
+    top: 40vh;
+    bottom: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo-img {
+    background-image: url('imgs/odin-lined.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 75%;
+    margin-left: 35%;
+}
+
+#logo-text {
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    margin-right: 35%;
+}
+
+#link-holder {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link-text {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+    flex: 2;
+    height: 100vh;
+    padding: 5%;
+}
+
+#disclaimer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px 0 0 50px;
+}
+
+#disclaimer-text > div > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    max-width: 90%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+legend {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 100px;
+}
+
+#form-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+#form-item {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.text-input {
+    width: 50px;
+  height: 30px;
+  margin: 5px 0 25px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
